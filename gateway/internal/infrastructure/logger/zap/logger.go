@@ -38,7 +38,6 @@ func (l *Logger) Sync() {
 	l.mu.Lock()
 	defer l.mu.Unlock()
 
-	//nolint
 	l.zapLogger.Sync()
 }
 
